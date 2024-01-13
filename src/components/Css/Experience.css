@@ -1,0 +1,28 @@
+
+@keyframes changeBorder{
+  0% {
+    border-top: 3px dashed;
+    border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
+  }
+  25% {
+    border-right: 3px dashed;
+      border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
+    }
+  50% {
+    border-bottom: 3px dashed;
+    border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
+  }
+  75% {
+    border-left: 3px dashed;
+      border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
+    }
+  100% {
+    border-top: 3px dashed;
+    border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
+  }
+}
+
+.changing-border-div{
+
+  animation: changeBorder 3s infinite;
+}

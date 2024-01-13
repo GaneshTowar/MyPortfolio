@@ -1,0 +1,44 @@
+/* Skills.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 16px;
+}
+
+.skill-item {
+  padding: 16px;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Styling for hover effect */
+.skill-item:hover {
+  background: linear-gradient(to right, #f7fafc, #edf2f7);
+}
+
+/* Animation for individual skills */
+.skill-item-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.skill-item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}

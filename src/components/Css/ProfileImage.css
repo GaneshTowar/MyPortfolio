@@ -1,0 +1,40 @@
+
+
+  /* src/components/MovingBorderDiv.css */
+
+@keyframes moveBorder {
+    0% {
+      border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
+      transform: translateY(0);
+      transform: translateX(0);
+    }
+    25% {
+        border-radius: 33% 67% 34% 66% / 25% 75% 25% 75%  ;
+        transform: translateY(-20px);
+        transform: translateX(-20px);
+      }
+    50% {
+      border-radius: 66% 34% 67% 33% / 44% 54% 46% 56%;
+      transform: translateY(0px);
+      transform: translateX(0px);
+    }
+    75% {
+        border-radius: 22% 78% 9% 91% / 86% 19% 81% 14% ;
+        transform: translateY(20px);
+        transform: translateX(20px);
+      }
+    100% {
+      border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
+      transform: translateY(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .moving-border-div {
+    border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
+    width: 250x; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    background-color: #3490de; /* Your background color */
+    animation: moveBorder 5s infinite;
+  }
+  

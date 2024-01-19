@@ -1,13 +1,12 @@
-
 import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
+  const [navBar, setnavBar] = useState(false);
+  function switchNavBar() {
+    console.log(navBar);
+    setnavBar(!navBar);
+  }
   return (
     <header className="sticky top-5 text-black ">
       <div className="flex justify-between items-center px-4 md:px-10">
@@ -16,7 +15,7 @@ const Header = () => {
             Ganesh Towar
           </h1>
         </div>
-        <nav className={`md:flex space-x-4 cursor-pointer ${showMenu ? 'block' : 'hidden'}`}>
+        <nav className={`hidden space-x-4 cursor-pointer md:flex `}>
           <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
             Home
           </div>
@@ -35,40 +34,46 @@ const Header = () => {
             Contacts
           </div>
         </nav>
-        {/* Hamburger menu button for small screens */}
-        <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        {
+          !navBar &&  <GiHamburgerMenu className="md:hidden" onClick={switchNavBar}/>
+
+        }
+       
+        {navBar && (
+          <nav
+            className={`flex-col z-50 backdrop-blur-lg bg-slate-50  text-center h-screen w-screen fixed top-0 right-0 space-x-4 cursor-pointer`}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </div>
+            <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md  ml-4 ">
+              Home
+            </div>
+            <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
+              Skills
+            </div>
+
+            <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
+              Experience
+            </div>
+
+            <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
+              Projects
+            </div>
+            <div className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
+              Contacts
+            </div>
+            <div
+              onClick={switchNavBar}
+              className="header-link hover:translate-x-1 hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md"
+            >
+              Close
+            </div>
+          </nav>
+        )}
       </div>
-      {/* Responsive navigation for small screens */}
-      {showMenu && (
-        <div className="md:hidden">
-          {/* Responsive Navigation items */}
-          {/* ... */}
-        </div>
-      )}
     </header>
   );
 };
 
 export default Header;
-
-
-
-
 
 // const Header = () => {
 //   return (

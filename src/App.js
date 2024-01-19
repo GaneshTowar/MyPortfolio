@@ -10,7 +10,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className="App h-full">
+    <div className="App h-screen">
 
       <Header />
       <About />

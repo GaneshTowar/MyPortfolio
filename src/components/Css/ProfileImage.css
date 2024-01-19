@@ -30,11 +30,27 @@
     }
   }
   
-  .moving-border-div {
-    border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
-    width: 250x; /* Adjust as needed */
-    height: 250px; /* Adjust as needed */
-    background-color: #3490de; /* Your background color */
-    animation: moveBorder 5s infinite;
+  @media(min-width: 768px) {
+
+    .moving-border-div {
+      border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
+      width: 250px; /* Adjust as needed */
+      height: 250px; /* Adjust as needed */
+      background-color: #3490de; /* Your background color */
+      animation: moveBorder 5s infinite;
+      z-index: 0;
+    }
+    
   }
-  
+
+    .moving-border-div {
+      border-radius: 33% 67% 34% 66% / 56% 46% 54% 44%;
+      width: 100%;
+      height: 200px;
+      display: block;
+      background-color: #3490de; /* Your background color */
+      animation: moveBorder 5s infinite;
+      left: 200px;
+      z-index: 0;
+    }
+    

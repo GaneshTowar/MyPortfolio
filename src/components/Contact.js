@@ -4,7 +4,7 @@ import "./Css/Project.css"
 const Contact = () => {
   return (
     <div className="bg-black text-white h-fit flex items-center justify-center">
-      <div className="max-w-md p-8 bg-gray-800 rounded shadow-md">
+      <div className="max-w-md p-8 bg-gray-800 rounded shadow-md my-20">
         <h1 className="text-3xl font-bold mb-6 text-stroke text-white ">Contact Me</h1>
 
         <form>

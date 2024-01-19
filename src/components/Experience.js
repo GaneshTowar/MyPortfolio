@@ -20,7 +20,7 @@ const Experience = () => {
     <div className="h-fit py-6  bg-cover bg-blend-lighten text-stroke text-white"  style={{
       backgroundImage: `url(${background})`,
     }}>
-      <h2 className="font-semibold text-4xl text-center" id="#exp">
+      <h2 className="font-semibold text-4xl text-center sm:pt-12" id="#exp">
         Experience
       </h2>
       {Experience.map((exp, index) => (

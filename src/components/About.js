@@ -52,7 +52,7 @@ const About = ({navBar, setnavBar}) => {
         {   
         !navBar &&  
             <div
-              className="md:h-64  aspect-auto md:w-full md:bg-cover md:m-auto moving-border-div bg-contain bg-no-repeat bg-center bg-transparent md:order-3 order-1 transition-opacity duration-1000 ease-in-out z-0 "
+              className="md:h-64 border-t-0 border-b-8  border-r-2 border-l-2 border-black aspect-auto md:w-full md:bg-cover md:m-auto moving-border-div bg-contain bg-no-repeat bg-center bg-transparent md:order-3 order-1 transition-opacity duration-1000 ease-in-out z-0 "
               style={{
                 backgroundImage: `url(${profile1})`,
               }}

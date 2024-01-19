@@ -5,10 +5,10 @@ import profile from "./Images/profile.jpeg";
 import "./Css/ProfileImage.css";
 import React from "react";
 
-const About = () => {
+const About = ({navBar, setnavBar}) => {
   return (
     <>
-      <section className="grid md:grid-cols-6 h-4/5 place-content-around cursor-default grid-cols-1 z-0">
+      <section className="grid md:grid-cols-6 h-4/5 place-content-around cursor-default grid-cols-1 ">
         <div className="flex md:flex-col gap-8 items-center col-span-1 justify-center md:order-1 order-3">
           <div className="cursor-pointer hover:uppercase hover:bg-slate-200 hover:font-semibold hover:border-r-2 hover:bg-gradient-to-r from-slate-50 to-blue-500 px-4 py-1 rounded-md">
             <SiGithub size={25} />
@@ -30,13 +30,15 @@ const About = () => {
           </p>
           <p className=""></p>
         </div>
-
-        <div
-          className="md:h-64 md:w-full md:bg-cover md:m-auto moving-border-div bg-cover md:order-3 order-1 z-0"
-          style={{
-            backgroundImage: `url(${profile})`,
-          }}
-        ></div>
+        {   
+        !navBar &&  
+            <div
+              className="md:h-64 md:w-full md:bg-cover md:m-auto moving-border-div bg-cover md:order-3 order-1 transition-opacity duration-1000 ease-in-out z-0"
+              style={{
+                backgroundImage: `url(${profile})`,
+              }}
+            ></div>
+        }
       </section>
     </>
   );

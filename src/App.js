@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -8,12 +8,14 @@ import Skills from './components/skills';
 import './App.css';
 import Experience from './components/Experience';
 
+
 function App() {
+  const [navBar, setnavBar] = useState(false);
   return (
     <div className="App h-screen">
 
-      <Header />
-      <About />
+      <Header navBar={navBar} setnavBar={setnavBar}/>
+      <About navBar={navBar} setnavBar={setnavBar} />
       <Experience/>
       <Skills/>
       <Projects />

@@ -46,7 +46,7 @@ const Header = ({navBar,setnavBar, AboutRef ,experienceRef,skillsRef,projectsRef
           </div>
         </nav>
         {
-          !navBar &&  <GiHamburgerMenu className="md:hidden" onClick={switchNavBar}/>
+          !navBar &&  <GiHamburgerMenu size={28} className="md:hidden" onClick={switchNavBar}/>
 
         }
        

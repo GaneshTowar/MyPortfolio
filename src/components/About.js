@@ -43,7 +43,7 @@ const About = ({navBar, setnavBar}) => {
 
         <div className="flex flex-col gap-6 col-span-3 content-center md:text-left px-20 md:order-2 order-2 text-center">
           <p className="text-5xl text-white font-bold text-stroke ">Ganesh Towar</p>
-          <p className="text-2xl font-extrabold text-blue-600 text-stroke">Full Stack developer</p>
+          <p className="text-2xl font-extrabold text-white text-stroke">Full Stack developer</p>
           <p className=" font-bold text-black text-xl  ">
             Welcome to my portfolio! I am a passionate <p className="font-bold"> web developer </p> with
             experience in React, JavaScript, express, next ,react native and more.

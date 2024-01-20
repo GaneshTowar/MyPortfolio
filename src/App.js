@@ -22,9 +22,6 @@ function App() {
 
     <div
       className="App h-screen bg-blend-lighten bg-cover "
-      style={{
-        backgroundImage: `url(${background})`,
-      }}
     >
       <Header navBar={navBar} setnavBar={setnavBar}
       AboutRef={AboutRef}

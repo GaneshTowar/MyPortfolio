@@ -20,9 +20,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-white text-center min-h-screen p-8 bg-cover" style={{
-      backgroundImage: `url(${background})`,
-    }}>
+    <div className="bg-white text-center min-h-screen p-8 bg-cover" >
       <h1 className="text-3xl font-bold mb-6">My<span className='text-white border-2 border-black text-stroke'>Project</span></h1>
 
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  text-white">

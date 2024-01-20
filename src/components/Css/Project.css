@@ -3,9 +3,9 @@
 .text-stroke {
     color: #000; /* Set your text color */
     text-shadow: 
-      -1px -1px 0 #000000,  
-      1px -1px 0 #000000,
-      -1px 1px 0 #000000,
-      1px 1px 0 #000000; /* Adjust the shadow values for the desired stroke effect */
+      -2px -2px 0 #000000,  
+      2px -2px 0 #000000,
+      -2px 2px 0 #000000,
+      2px 2px 0 #000000; /* Adjust the shadow values for the desired stroke effect */
   }
   

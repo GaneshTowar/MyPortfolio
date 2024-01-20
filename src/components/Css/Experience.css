@@ -1,33 +1,38 @@
 
 @keyframes changeBorder{
   0% {
-    border: 3px dashed;
+    border: 3px solid;
     border-right-color: rgb(3, 3, 3);
+    border-top-color: rgb(3, 3, 3);
     border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
   }
   25% {
-    border: 3px dashed;
+    border: 3px solid;
     border-bottom-color: rgb(3, 3, 3);
+    border-right-color: rgb(3, 3, 3);
       border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
     }
   50% {
-    border: 3px dashed;
+    border: 3px solid;
     border-left: rgb(3, 3, 3);
+    border-bottom-color: rgb(3, 3, 3);
     border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
   }
   75% {
-    border: 3px dashed;
+    border: 3px solid;
     border-top-color: rgb(3, 3, 3);
+    border-left: rgb(3, 3, 3);
       border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
     }
   100% {
-    border: 3px dashed;
+    border: 3px solid;
     border-right-color: rgb(3, 3, 3);
+    border-top-color: rgb(3, 3, 3);
     border-radius: 51% 49% 48% 52% / 0% 0% 100% 100% 
   }
 }
 
 .changing-border-div{
 
-  animation: changeBorder 3s infinite;
+  animation: changeBorder 1s infinite;
 }

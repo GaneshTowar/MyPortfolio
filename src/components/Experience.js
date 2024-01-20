@@ -17,9 +17,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="h-fit py-6  bg-cover bg-blend-lighten text-stroke text-white"  style={{
-      backgroundImage: `url(${background})`,
-    }}>
+    <div className="h-fit py-6  bg-cover bg-blend-lighten text-stroke text-white" >
       <h2 className="font-semibold text-4xl text-center sm:pt-12" id="#exp">
         Experience
       </h2>

@@ -13,14 +13,12 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="bg-white min-h-screen p-8 mt-0 text-center bg-cover" style={{
-      backgroundImage: `url(${background})`,
-    }}>
+    <div className="bg-white min-h-screen p-8 mt-0 text-center bg-cover">
       <h1 className="text-3xl font-bold mb-6 text-stroke text-white ">My Skills</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-stroke text-white">
         {skills.map((skill, index) => (
-          <div key={index} className=" border-black bg-slate-200 border-b-2 border-2 p-4 rounded shadow-md hover:bg-gradient-to-r hover:border-2  hover:drop-shadow-2xl">
+          <div key={index} className=" border-black bg-black border-b-2 border-2 p-4 rounded shadow-md  hover:border-2  hover:drop-shadow-2xl">
             <p className="text-lg">{skill}</p>
           </div>
         ))}

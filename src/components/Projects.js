@@ -40,7 +40,7 @@ const Projects = () => {
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
         {projects.map((project) => (
           <div key={project.id} className="bg-black p-6 rounded shadow-md drop-shadow-2xl">
-            <img src={"https://source.unsplash.com/random/300x300/?code"} alt={""} className="mb-4 rounded-md h-1/6 " style={{ width: '100%', height: 'auto' }} />
+            <img data-aos="fade-up" src={"https://source.unsplash.com/random/300x300/?code"} alt={""} className="mb-4 rounded-md h-1/6 " style={{ width: '100%', height: 'auto' }} />
             <h2 data-aos="fade-up" className="text-xl font-bold mb-2 text-white">{project.name}</h2>
             <p data-aos="fade-up" className="mb-4 text-stroke text-white">{project.description}</p>
             <p data-aos="zoom-in" className="hover:text-black hover:bg-white hover:border-0 text-stroke text-white border border-color-white" onClick={() => openProject(project.link)}>Visit Project</p>

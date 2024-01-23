@@ -2,7 +2,11 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Css/Project.css"
 
+
 const Header = ({navBar,setnavBar, AboutRef ,experienceRef,skillsRef,projectsRef,contactsRef}) => {
+
+
+
 
   function switchNavBar() {
     console.log(navBar);

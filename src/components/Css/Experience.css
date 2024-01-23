@@ -33,6 +33,7 @@
 }
 
 .changing-border-div{
-
-  animation: changeBorder 1s infinite;
+  border: 3px solid;
+  border-radius: 0%;
+  animation: changeBorder 1s normal;
 }

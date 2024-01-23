@@ -1,5 +1,4 @@
 import React from 'react';
-import background from "./Images/background.jpg"
 import "./Css/Project.css"
 
 
@@ -13,7 +12,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="bg-white min-h-screen p-8 mt-0 text-center bg-cover">
+    <div className=" min-h-screen p-8 mt-0 text-center bg-cover">
       <h1 className="text-3xl font-bold mb-6 text-stroke text-white ">My Skills</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-stroke text-white">

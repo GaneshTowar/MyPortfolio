@@ -5,9 +5,9 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/skills";
-import background from "./components/Images/background.jpg";
 import "./App.css";
 import Experience from "./components/Experience";
+
 
 function App() {
   const [navBar, setnavBar] = useState(false);
@@ -19,10 +19,9 @@ function App() {
   console.log("Refs:",AboutRef,  skillsRef, experienceRef, projectsRef, contactsRef);
 
   return (
+    
+    <div className="App h-screen bg-blend-lighten bg-cover " >
 
-    <div
-      className="App h-screen bg-blend-lighten bg-cover "
-    >
       <Header navBar={navBar} setnavBar={setnavBar}
       AboutRef={AboutRef}
       experienceRef={experienceRef}
